@@ -1,0 +1,81 @@
+[12:13:18.85] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Fri Jan 19 12:13:15 2018
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[12:13:30.99] /i db::setAttr geometry -of [gi::getFrames 0] -value 600x300+229+398
+[12:13:34.51] /i db::setAttr geometry -of [gi::getFrames 0] -value 600x300+243+167
+[12:13:37.08] /i db::setAttr geometry -of [gi::getFrames 0] -value 683x409+243+167
+[12:13:39.01] /i db::setAttr geometry -of [gi::getFrames 0] -value 837x526+243+167
+[12:14:35.02] /# gi::executeAction dmShowLibraryManager -in [gi::getWindows 0]
+[12:14:35.02] /i dm::showLibraryManager
+[12:14:35.03] /r giWindowId 1
+[12:14:35.03] /r giWindowGeometry 660x600+50+50
+[12:14:35.10] /o oa:0x2379ab50
+[12:15:11.86] /# gi::executeAction dmShowNewLibrary -in [gi::getWindows 1]
+[12:15:11.86] /i dm::showNewLibrary -parent 1
+[12:15:11.92] /o oa:0x25cdfc10
+[12:15:12.02] /i gi::setActiveDialog [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 1]]
+[12:15:12.24] /i db::setAttr geometry -of [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 1]] -value 434x493+163+72
+[12:16:38.13] /i gi::setField {techTypeFile} -value {true} -in [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 1]]
+[12:17:01.93] /i gi::setField {techFile} -value {/usr/local/synopsys/pdk/SAED_PDK90nm/techfiles/saed90nm_1p9m_cd.tf} -in [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 1]]
+[12:17:11.75] /i gi::setField {techFile} -value {/usr/local/synopsys/pdk/SAED_PDK90nm/techfiles/saed90nm_1p9m_cd.tfmy} -in [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 1]]
+[12:17:14.53] /i gi::setField {libName} -value {my} -in [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 1]]
+[12:17:23.00] /i gi::setField {libName} -value {mylibrary} -in [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 1]]
+[12:17:58.73] /i gi::pressButton {apply} -in [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 1]]
+[12:17:58.80] /r giDialog gi::setActiveDialog [gi::getDialogs {dmErrorDialog}]
+[12:17:59.21] /r giDialog db::setAttr geometry -of [gi::getDialogs {dmErrorDialog}] -value 513x89+183+92
+[12:18:01.62] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {dmErrorDialog}]
+[12:18:01.67] /i gi::setActiveDialog [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 1]]
+[12:18:08.95] /i gi::setField {techFile} -value {/usr/local/synopsys/pdk/SAED_PDK90nm/techfiles/saed90nm_1p9m_cd.tf} -in [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 1]]
+[12:18:09.06] /i gi::pressButton {apply} -in [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 1]]
+[12:18:09.07] /# dm::createLib mylibrary -path {./mylibrary} -dmSystem oaDMFileSys
+[12:18:09.08] /# db::importTechFile /usr/local/synopsys/pdk/SAED_PDK90nm/techfiles/saed90nm_1p9m_cd.tf -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] mylibrary]]; oa::save [oa::TechFind [oa::ScalarName [oa::CdbaNS] mylibrary]]
+[12:18:09.09] /m Information: Information: constraint name 'minSpacing' of layer pair constraint is replaced by constraint name 'minClearance'.[line 839] (TECH_IO-090). (TECH_IO-098)
+[12:18:09.09] /m Information: Information: constraint name 'minSpacing' of layer pair constraint is replaced by constraint name 'minClearance'.[line 840] (TECH_IO-090). (TECH_IO-098)
+[12:18:09.09] /m Information: Information: constraint name 'minSpacing' of layer pair constraint is replaced by constraint name 'minClearance'.[line 841] (TECH_IO-090). (TECH_IO-098)
+[12:18:09.09] /m Information: Information: constraint name 'minSpacing' of layer pair constraint is replaced by constraint name 'minClearance'.[line 843] (TECH_IO-090). (TECH_IO-098)
+[12:18:09.09] /m Information: Information: constraint name 'minSpacing' of layer pair constraint is replaced by constraint name 'minClearance'.[line 844] (TECH_IO-090). (TECH_IO-098)
+[12:18:09.09] /m Information: Information: constraint name 'minSpacing' of layer pair constraint is replaced by constraint name 'minClearance'.[line 845] (TECH_IO-090). (TECH_IO-098)
+[12:18:09.09] /m Information: Information: constraint name 'minSpacing' of layer pair constraint is replaced by constraint name 'minClearance'.[line 846] (TECH_IO-090). (TECH_IO-098)
+[12:18:09.10] /m Information: Information: constraint name 'minSpacing' of layer pair constraint is replaced by constraint name 'minClearance'.[line 848] (TECH_IO-090). (TECH_IO-098)
+[12:18:09.10] /m Information: Information: constraint name 'minSpacing' of layer pair constraint is replaced by constraint name 'minClearance'.[line 853] (TECH_IO-090). (TECH_IO-098)
+[12:18:09.10] /m Information: Information: constraint name 'minSpacing' of layer pair constraint is replaced by constraint name 'minClearance'.[line 855] (TECH_IO-090). (TECH_IO-098)
+[12:18:09.10] /m Information: Information: constraint name 'minSpacing' of layer pair constraint is replaced by constraint name 'minClearance'.[line 856] (TECH_IO-090). (TECH_IO-098)
+[12:18:09.10] /m Information: Information: constraint name 'minSpacing' of layer pair constraint is replaced by constraint name 'minClearance'.[line 857] (TECH_IO-090). (TECH_IO-098)
+[12:18:09.10] /m Information: Information: constraint name 'validLayers' of simple constraint is replaced by constraint name 'validRoutingLayers'.[line 983] (TECH_IO-090). (TECH_IO-098)
+[12:18:09.11] /w Warning: Section leRules is not supported by tech parser,  and skipped.  line[1037] (TECH_IO-076)
+[12:18:09.13] /w Warning: standViaDef DIFFCON: cut layer CO mask number 23 is not between via layers DIFF(2), M1(6). (TECH_IO-096)
+[12:18:09.13] /w Warning: standViaDef VIA78: cut layer VIA7 mask number 21 is not between via layers M7(18), M8(19). (TECH_IO-096)
+[12:18:09.13] /w Warning: standViaDef VIA89: cut layer VIA8 mask number 22 is not between via layers M8(19), M9(20). (TECH_IO-096)
+[12:18:09.13] /m Information: creating new layer pair constraint definition minEnclosure (TECH_IO-050)
+[12:18:09.13] /m Information: creating new layer pair constraint definition endOfLineEnclosure (TECH_IO-050)
+[12:18:09.15] /m Information: Technology file /usr/local/synopsys/pdk/SAED_PDK90nm/techfiles/saed90nm_1p9m_cd.tf is successfully imported into lib mylibrary. (TECH_IO-099)
+[12:18:09.17] /# oa::close [oa::TechFind [oa::ScalarName [oa::CdbaNS] mylibrary]]
+[12:18:50.11] /i gi::pressButton {ok} -in [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 1]]
+[12:18:50.16] /r giDialog gi::setActiveDialog [gi::getDialogs {dmMessage}]
+[12:18:50.50] /r giDialog db::setAttr geometry -of [gi::getDialogs {dmMessage}] -value 620x119+183+92
+[12:18:52.47] /r giDialog gi::pressButton {cancel} -in [gi::getDialogs {dmMessage}]
+[12:18:52.52] /i gi::setActiveDialog [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 1]]
+[12:18:57.19] /i gi::closeWindows [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 1]]
+[12:18:58.70] /i gi::setCurrentIndex {libs} -index {mylibrary} -in [gi::getWindows 1]
+[12:18:58.73] /i gi::setItemSelection {libs} -index {mylibrary} -in [gi::getWindows 1]
+[12:19:10.66] /i gi::setCurrentIndex {cellCategories} -index {All} -in [gi::getWindows 1]
+[12:19:18.51] /# gi::executeAction dmShowNewCellView -in [gi::getWindows 1]
+[12:19:18.51] /i dm::showNewCellView -parent 1
+[12:19:18.55] /o oa:0x25c89b80
+[12:19:18.66] /i gi::setActiveDialog [gi::getDialogs {dmNewCellView} -parent [gi::getWindows 1]]
+[12:19:18.87] /i db::setAttr geometry -of [gi::getDialogs {dmNewCellView} -parent [gi::getWindows 1]] -value 588x336+86+72
+[12:19:27.21] /i gi::setField {cellName} -value {inverter} -in [gi::getDialogs {dmNewCellView} -parent [gi::getWindows 1]]
+[12:19:36.58] /i gi::setField {cellViewName} -value {schematic} -in [gi::getDialogs {dmNewCellView} -parent [gi::getWindows 1]]
+[12:19:41.38] /i gi::pressButton {apply} -in [gi::getDialogs {dmNewCellView} -parent [gi::getWindows 1]]
+[12:19:41.38] /# db::getAttr viewType -of [dm::findCellView schematic -cell [dm::findCell inverter -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] mylibrary]]]]
+[12:19:41.39] /# dm::createCellView schematic -cell [dm::findCell inverter -lib [ oa::LibFind [oa::ScalarName [oa::CdbaNS] mylibrary]]] -viewType schematic
+[12:19:41.40] /# de::open [dm::findCellView schematic -cell [dm::findCell inverter -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] mylibrary]]]] -application seSchematic
+[12:19:41.45] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[12:19:41.53] /r giWindowId 2
+[12:19:41.53] /r giWindowGeometry 1088x700
